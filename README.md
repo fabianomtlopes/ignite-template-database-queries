@@ -15,8 +15,10 @@ A aplicação possui dois módulos: `users` e `games`. Um **usuário** pode ter 
 ## Preparando o ambiente para os testes
 
 Para que os testes funcionem, é importante que você crie uma **database no banco Postgres** com o nome `queries_challenge` e substitua os dados de autenticação (caso os seus não sejam os mesmos) no arquivo **ormconfig.json**:
-
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1a1da61e-f25b-4214-9e63-4da7ffe345df/Captura_de_tela_2021-03-21_134437.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1a1da61e-f25b-4214-9e63-4da7ffe345df/Captura_de_tela_2021-03-21_134437.png)
+```
+  "username": "postgres",
+  "password": "docker",
+```
 
 **Atenção**: Se você precisou mudar alguma informação no arquivo de configuração **ormconfig.json** para que fosse possível rodar os testes, é necessário que, antes de mandar na plataforma da Rocketseat, você volte esses dados ao padrão que veio do template. Caso contrário, os testes não irão rodar corretamente na plataforma.
 
@@ -45,24 +47,23 @@ Para esse desafio, temos os seguintes testes:
 
 - **[UsersRepository] should be able to find user with games list by user's ID**
 
-    Para que esse teste passe, você deve satisfazer o código de acordo com o que é [descrito aqui](https://www.notion.so/Desafio-01-Database-Queries-8d97dae581d5446e97555c43d301ee45).
+ 
 
 - **[UsersRepository] should be able to list users ordered by first name**
 
-    Para que esse teste passe, você deve satisfazer o código de acordo com o que é [descrito aqui](https://www.notion.so/Desafio-01-Database-Queries-8d97dae581d5446e97555c43d301ee45).
+  
 
 - **[UsersRepository] should be able to find user by full name**
 
-    Para que esse teste passe, você deve satisfazer o código de acordo com o que é [descrito aqui.](https://www.notion.so/Desafio-01-Database-Queries-8d97dae581d5446e97555c43d301ee45)
+
 
 - **[GamesRepository] should be able find a game by entire or partial given title**
 
-    Para que esse teste passe, você deve satisfazer o código de acordo com o que é [descrito aqui](https://www.notion.so/Desafio-01-Database-Queries-8d97dae581d5446e97555c43d301ee45)[.](https://www.notion.so/Desafio-01-Database-Queries-8d97dae581d5446e97555c43d301ee45)
-
+  
 - **[GamesRepository] should be able to get the total count of games**
 
-    Para que esse teste passe, você deve satisfazer o código de acordo com o que é [descrito aqui](https://www.notion.so/Desafio-01-Database-Queries-8d97dae581d5446e97555c43d301ee45).
+ 
 
 - **[GamesRepository] should be able to list users who have given game id**
 
-    Para que esse teste passe, você deve satisfazer o código de acordo com o que é [descrito aqui](https://www.notion.so/Desafio-01-Database-Queries-8d97dae581d5446e97555c43d301ee45).
+
